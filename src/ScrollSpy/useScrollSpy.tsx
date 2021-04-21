@@ -56,7 +56,9 @@ export const useScrollSpy = ({
     spy();
     window.addEventListener('scroll', spy);
 
-    return () => window.removeEventListener('scroll', spy);
+    return () => {
+      window.removeEventListener('scroll', spy);
+    };
   }, [spy]);
 
   return {

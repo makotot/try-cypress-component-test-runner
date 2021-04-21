@@ -33,6 +33,7 @@ function App() {
         {({ currentElementInViewport }) => (
           <div>
             <ul
+              data-cy="nav-wrapper"
               style={{
                 listStyle: 'none',
                 position: 'fixed',
@@ -45,6 +46,8 @@ function App() {
                 <li key={i}>
                   <a
                     href={`#section-${i}`}
+                    data-cy={`nav-item`}
+                    className={currentElementInViewport === i ? 'active' : ''}
                     style={{
                       color: currentElementInViewport === i ? '#f00' : '#222',
                     }}>
@@ -53,12 +56,14 @@ function App() {
                 </li>
               ))}
             </ul>
-            <div>
+            <div data-cy="section-wrapper">
               {new Array(SIZE).fill(0).map((_, i) => (
                 <div
                   id={`section-${i}`}
+                  data-cy={`section-item`}
                   key={i}
                   ref={sectionRefs[i]}
+                  className={currentElementInViewport === i ? 'active' : ''}
                   style={{
                     display: 'flex',
                     justifyContent: 'center',
@@ -72,6 +77,12 @@ function App() {
                 </div>
               ))}
             </div>
+            <footer
+              style={{
+                height: '100vh',
+              }}>
+              foot
+            </footer>
           </div>
         )}
       </ScrollSpy>
