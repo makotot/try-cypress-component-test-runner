@@ -1207,10 +1207,10 @@
     tunnel-agent "^0.6.0"
     uuid "^3.3.2"
 
-"@cypress/webpack-dev-server@1.1.3":
-  version "1.1.3"
-  resolved "https://registry.npmjs.org/@cypress/webpack-dev-server/-/webpack-dev-server-1.1.3.tgz"
-  integrity sha512-A2TaUTV8/ZNZSZUtAyOhhVJ9I4u5TZq0Qbfe16U2to+IO0514VbyaSs1RdTzZazT917w4XfveGEiC79UXO1cmg==
+"@cypress/webpack-dev-server@1.1.4":
+  version "1.1.4"
+  resolved "https://registry.npmjs.org/@cypress/webpack-dev-server/-/webpack-dev-server-1.1.4.tgz"
+  integrity sha512-bDmDV5rJ+7wvc5YnKriWxVjhqndzddvLCjzqEqzUhm4+85acq0h51QGcLcJNcCJY/6yoidgz20ae8hEJk4jbKQ==
   dependencies:
     debug "4.3.2"
     html-webpack-plugin "^4.0.0"
