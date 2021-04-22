@@ -1,11 +1,13 @@
 import React, { useRef } from 'react';
-import logo from './logo.svg';
-import './App.css';
 import { ScrollSpy } from './ScrollSpy';
 
 const SIZE = 5;
 
-function App() {
+function App({
+  pattern = 'largeHeaderAndFooter',
+}: {
+  pattern?: 'largeHeaderAndFooter' | 'shortLastSection';
+}) {
   const sectionRefs = [
     useRef<HTMLDivElement>(null),
     useRef<HTMLDivElement>(null),
@@ -16,19 +18,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
+      <header style={{ height: '500px' }}>header</header>
       <ScrollSpy sectionRefs={sectionRefs}>
         {({ currentElementInViewport }) => (
           <div>
@@ -68,7 +58,10 @@ function App() {
                     display: 'flex',
                     justifyContent: 'center',
                     alignItems: 'center',
-                    height: i === SIZE - 1 ? '50vh' : '100vh',
+                    height:
+                      pattern === 'shortLastSection' && i === SIZE - 1
+                        ? '100px'
+                        : '500px',
                     backgroundColor: `#${i}${i}${i}`,
                     color: '#fff',
                     fontSize: '2rem',
@@ -77,12 +70,14 @@ function App() {
                 </div>
               ))}
             </div>
-            <footer
-              style={{
-                height: '100vh',
-              }}>
-              foot
-            </footer>
+            {pattern === 'largeHeaderAndFooter' && (
+              <footer
+                style={{
+                  height: '500px',
+                }}>
+                foot
+              </footer>
+            )}
           </div>
         )}
       </ScrollSpy>

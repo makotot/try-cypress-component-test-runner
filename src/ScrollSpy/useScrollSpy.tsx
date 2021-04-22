@@ -55,9 +55,11 @@ export const useScrollSpy = ({
   useEffect(() => {
     spy();
     window.addEventListener('scroll', spy);
+    window.addEventListener('resize', spy);
 
     return () => {
       window.removeEventListener('scroll', spy);
+      window.removeEventListener('resize', spy);
     };
   }, [spy]);
 
