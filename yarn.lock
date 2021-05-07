@@ -1207,13 +1207,12 @@
     tunnel-agent "^0.6.0"
     uuid "^3.3.2"
 
-"@cypress/webpack-dev-server@1.1.4":
-  version "1.1.4"
-  resolved "https://registry.npmjs.org/@cypress/webpack-dev-server/-/webpack-dev-server-1.1.4.tgz"
-  integrity sha512-bDmDV5rJ+7wvc5YnKriWxVjhqndzddvLCjzqEqzUhm4+85acq0h51QGcLcJNcCJY/6yoidgz20ae8hEJk4jbKQ==
+"@cypress/webpack-dev-server@1.1.6":
+  version "1.1.6"
+  resolved "https://registry.npmjs.org/@cypress/webpack-dev-server/-/webpack-dev-server-1.1.6.tgz"
+  integrity sha512-3+zm8axsjOuWnhkoYCI27WWWs/rlGPFs+1vgszFCIzzsIcoIzmnF7EMNHMi90bbgTv7EPB4jQ5KCPPzwiJ7J3w==
   dependencies:
     debug "4.3.2"
-    html-webpack-plugin "^4.0.0"
     semver "^7.3.4"
     webpack-merge "^5.4.0"
 
@@ -5899,7 +5898,7 @@ html-minifier-terser@^5.0.1:
     relateurl "^0.2.7"
     terser "^4.6.3"
 
-html-webpack-plugin@4.5.0, html-webpack-plugin@^4.0.0:
+html-webpack-plugin@4.5.0:
   version "4.5.0"
   resolved "https://registry.npmjs.org/html-webpack-plugin/-/html-webpack-plugin-4.5.0.tgz"
   integrity sha512-MouoXEYSjTzCrjIxWwg8gxL5fE2X2WZJLmBYXlaJhQUH5K/b5OrqmV7T4dB7iu0xkmJ6JlUuV6fFVtnqbPopZw==
