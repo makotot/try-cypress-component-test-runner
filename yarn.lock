@@ -1207,13 +1207,13 @@
     tunnel-agent "^0.6.0"
     uuid "^3.3.2"
 
-"@cypress/webpack-dev-server@1.1.4":
-  version "1.1.4"
-  resolved "https://registry.npmjs.org/@cypress/webpack-dev-server/-/webpack-dev-server-1.1.4.tgz"
-  integrity sha512-bDmDV5rJ+7wvc5YnKriWxVjhqndzddvLCjzqEqzUhm4+85acq0h51QGcLcJNcCJY/6yoidgz20ae8hEJk4jbKQ==
+"@cypress/webpack-dev-server@1.8.4":
+  version "1.8.4"
+  resolved "https://registry.yarnpkg.com/@cypress/webpack-dev-server/-/webpack-dev-server-1.8.4.tgz#00c1d7510dccfcaef6ec69f70342d011bbdefc19"
+  integrity sha512-kDg57ozD4vzIwHa0FhT44IoMKqsgFy7WV5SbBjWLBPdoOhuCdf22gy8VukaxwYqh+MFKxqVJ7hqVLErmMgpAYA==
   dependencies:
-    debug "4.3.2"
-    html-webpack-plugin "^4.0.0"
+    debug "^4.3.2"
+    lodash "^4.17.21"
     semver "^7.3.4"
     webpack-merge "^5.4.0"
 
@@ -4209,6 +4209,13 @@ debug@^4.0.1, debug@^4.1.0, debug@^4.1.1:
   dependencies:
     ms "2.1.2"
 
+debug@^4.3.2:
+  version "4.3.4"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.4.tgz#1319f6579357f2338d3337d2cdd4914bb5dcc865"
+  integrity sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==
+  dependencies:
+    ms "2.1.2"
+
 decamelize@^1.2.0:
   version "1.2.0"
   resolved "https://registry.npmjs.org/decamelize/-/decamelize-1.2.0.tgz"
@@ -5899,7 +5906,7 @@ html-minifier-terser@^5.0.1:
     relateurl "^0.2.7"
     terser "^4.6.3"
 
-html-webpack-plugin@4.5.0, html-webpack-plugin@^4.0.0:
+html-webpack-plugin@4.5.0:
   version "4.5.0"
   resolved "https://registry.npmjs.org/html-webpack-plugin/-/html-webpack-plugin-4.5.0.tgz"
   integrity sha512-MouoXEYSjTzCrjIxWwg8gxL5fE2X2WZJLmBYXlaJhQUH5K/b5OrqmV7T4dB7iu0xkmJ6JlUuV6fFVtnqbPopZw==
